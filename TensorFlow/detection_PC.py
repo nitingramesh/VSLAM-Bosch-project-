@@ -75,7 +75,7 @@ label2string = \
 	73:  "mouse",
 	74:  "remote",
 	75:  "keyboard",
-	76:  "cell phone",
+	76:  "Mobile phone",
 	77:  "microwave",
 	78:  "oven",
 	79:  "toaster",
@@ -122,8 +122,6 @@ def detect_from_camera():
 		# get outpu tensor
 		boxes = interpreter.get_tensor(output_details[0]['index'])
 		labels = interpreter.get_tensor(output_details[1]['index'])
-		print("Hello World")
-		print(output_details)
 		scores = interpreter.get_tensor(output_details[2]['index'])
 		num = interpreter.get_tensor(output_details[3]['index'])
 	
